@@ -4,11 +4,10 @@ title = "Tim's Portolio"
 theme = 'hugo-coder'
 languagecode = "en"
 defaultcontentlanguage = "en"
-enableInlineShortcodes = true
 
 [params]
   author = "Timothy R."
-  info =  """Featuring my personal projects, experience & learnings.
+  info =  """Featuring my personal projects, experience & learning.
   \n *Insert a witty and humorous quote* """
   keywords = "blog,personal"
   colorScheme = "dark"
