@@ -1,0 +1,36 @@
+baseURL = 'https://timfo.xyz/'
+languageCode = 'en-us'
+title = "Tim's Portolio"
+theme = 'hugo-coder'
+languagecode = "en"
+defaultcontentlanguage = "en"
+enableInlineShortcodes = true
+
+[params]
+  author = "Timothy R."
+  info =  """Featuring my personal projects, experience & learnings.
+  \n *Insert a witty and humorous quote* """
+  keywords = "blog,personal"
+  colorScheme = "dark"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 1
+  url  = "posts/"
+
+
+  [[menu.main]]
+  name = "About"
+  weight = 1
+  url  = "about/"
+
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 2
+  url = "https://github.com/t1mothyr"
+
+[imaging]
+  [imaging.exif]
+    disableDate = true
+    disableLatLong = true
