@@ -1,7 +1,7 @@
 baseURL = 'https://timfo.xyz/'
 languageCode = 'en-us'
 title = "Tim's Portolio"
-#theme = 'hugo-coder'
+theme = ["github.com/luizdepra/hugo-coder"]
 languagecode = "en"
 defaultcontentlanguage = "en"
 
