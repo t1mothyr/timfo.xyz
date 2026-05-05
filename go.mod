@@ -1,3 +1,3 @@
 module github.com/luizdepra/hugo-coder
 
-go 1.16
+go 1.25.9
