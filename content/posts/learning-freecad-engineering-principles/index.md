@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2026-04-29T11:30:00+10:00
+date = 2026-04-29T12:30:00+10:00
 title = "Learning FreeCAD & Engineering Principles"
 description = "You don't always want to have to design and fabricate a tool or mechanism to solve a problem. When you do it's a journey like no other."
 authors = ['Timothy']

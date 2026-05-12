@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2026-05-05T11:24:51+10:00
+date = 2026-05-05T12:30:00+10:00
 title = "Introducing Myself & My Experience"
 description = ""
 authors = ['Timothy']
@@ -22,4 +22,4 @@ My course also exposed me to other adjacent fields, but I primarily enjoyed cybe
 
 In addition to my coursework at University, I ran for and was elected as President to the committee of the Linux club. The experience of running and being in a leadership position was excellent, and I was incredibly fortunate to work alongside wonderful peers. During my tenure, we developed and deployed a website, conducted more events and outreach as well as collaborating with other clubs in our field to expand our members and provide both an online and in-person spaces to chat and upskill.
 
-I now spend my spare time dabbling with Kubernetes, exploring new services and tooling while practising what I've already learnt. This field is ever-evolving, and I love to push myself to explore cutting edge technologies to get a better insight into the evolution of this industry.
+I now spend my spare time dabbling with Kubernetes, exploring new services and tooling while practising what I've already learnt. This field is ever-evolving, and I love to push myself to explore cutting edge technologies to get a better insight into the evolution abd direction of this industry.
