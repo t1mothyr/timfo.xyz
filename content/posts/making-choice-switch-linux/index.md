@@ -30,8 +30,6 @@ Another large yet often understated reason is that Linux will often have more us
 
 Linux also provides a safe haven against spyware, adware and other potentially malicious activities that would run on other operating systems but can't on Linux. In addition, Linux can feature more *sane* defaults for security, meaning that apps work out of the box without having to allow permissions or go down rabbit holes. It must be noted however that although Linux on desktop is absent of most malware, with the uptick in adoption this may change in the future.
 
-
-
 ### How can I install Linux?
 
 There's three main ways you can use Linux, but only two are particularly usable in day-to-day situations.
