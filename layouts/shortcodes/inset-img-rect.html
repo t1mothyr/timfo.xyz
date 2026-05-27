@@ -1,0 +1,40 @@
+{{- $img := .Page.Resources.GetMatch (.Get "src") -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Get "caption" | default "" -}}
+
+{{- if $img -}}
+  {{- $tinyw := $img.Fill "480x320 webp" -}}
+  {{- $smallw := $img.Fill "960x640 webp" -}}
+  {{- $mediumw := $img.Fill "1536x1024 webp" -}}
+
+  {{- $tiny := $img.Fill "480x320" -}}
+  {{- $small := $img.Fill "960x640" -}}
+  {{- $medium := $img.Fill "1536x1024" -}}
+
+  <figure>
+    <picture>
+      <source type="image/webp"
+              srcset="{{ $tinyw.RelPermalink }} 320w,
+                      {{ $smallw.RelPermalink }} 640w,
+                      {{ $mediumw.RelPermalink }} 1024w"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1024px">
+      <source type="{{ $img.MediaType }}"
+              srcset="{{ $tiny.RelPermalink }} 320w,
+                      {{ $small.RelPermalink }} 640w,
+                      {{ $medium.RelPermalink }} 1024w"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1024px">
+      <img src="{{ $medium.RelPermalink }}"
+           alt="{{ $alt }}"
+           width="{{ $medium.Width }}"
+           height="{{ $medium.Height }}"
+           loading="lazy"
+           decoding="async"
+           style="width: 60%; height: auto; max-width: {{ $medium.Width }}px;">
+    </picture>
+    {{- if $caption -}}
+      <figcaption>{{ $caption | markdownify }}</figcaption>
+    {{- end -}}
+  </figure>
+{{- else -}}
+  <p style="color: red;">Error: Image "{{ .Get "src" }}" not found in page bundle</p>
+{{- end -}}
