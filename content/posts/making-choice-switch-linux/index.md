@@ -1,22 +1,18 @@
 +++ 
 draft = false
-date = 2026-05-25T12:30:00+10:00
-title = "Making the Choice to Switch to Linux"
-description = "What awaits you on the other side."
-authors = ['Timothy']
-tags = ['article','linux']
+date = 2026-05-27T12:30:00+10:00
+title = "Getting Started With Linux: The Beginner's Brief"
+description = ""
+author = 'Timothy'
+tags = ['article','guide','linux']
 +++
-
-*What awaits on the other side?*
-
-A short brief on what awaits you in the world of Linux, alongside some personal recommendations and links to further reading.
-
-**Contents**
-{{< inset-contentstable >}}
 
 There's been a lot of fuss about Linux in the past couple of months (and years), and it hasn't exactly come from nowhere. A huge cultural shift has taken place due to the perceived lack of control over the devices we own and use everyday.
 
 Companies such as Microsoft are now seen by some, whether accurately or not, as prioritising their interests to the extreme over the consumer. This has meant the desire for an alternative platform for desktop computing has been slowly growing, and all the while Linux has been making strides to provide a better and better experience for users.
+
+**Contents**
+{{< inset-contentstable >}}
 
 ## Some Context and History
 
@@ -41,24 +37,24 @@ Linux also provides a safe haven against spyware, adware and other potentially m
 
 ## How Can I Install Linux?
 
-There's three main ways you can use Linux, but only the first two are particularly usable in day-to-day situations.
+There's three main ways you can use Linux, but only the first two are particularly usable in day-to-day situations, dual-booting and standalone Linux. Before you jump in, make sure to keep backups of your data (you should be doing this anyway!) as you don't want to lose it.
 
 ### Dual-Boot
-The first, and most versatile option is to install Linux alongside your existing Windows installation. Granted you have enough storage to share two operating systems, you can choose at boot time what operating system you want to launch. It's often useful if you want to keep Windows for apps that can't run on Linux such as games like Valorant, a game which requires full access to your computer for you to play.
+The first, and most versatile option is to install Linux alongside your existing Windows installation. Granted you have enough storage to share two operating systems, when you power on your computer, you can choose what operating system you want to launch. It's often useful if you want to keep Windows for apps that can't run on Linux such as games like Valorant, a game which requires full access to your computer for you to play.
 
 ### Standalone
 
-When you run Linux on it's own you forgo Windows entirely, replacing your drive in it's entirety with Linux. This is the simplest option, but is the most irreversable of the three. Before you make this step, you should already have an idea of what software you already use, and potential alternatives if they do not already exist on Linux. 
+When you run Linux on it's own you forgo Windows, replacing your drive in it's entirety with Linux. This is the simplest option, but is the most irreversable of the three. Before you make this step, you should have an idea of what software you already use, and potential alternatives if they do not already exist on Linux.
 
 ### Virtualised
-Virtualised Linux runs on your machine on top of the operating system you already use. This makes it easy to test different versions of Linux, or experiment with and break the system without causing damage to your host operating system. However, you need to set up a virtual environment using software such as QEMU or [VirtualBox](https://www.virtualbox.org/). In addition, virtual machines often lack graphically accelerated environments, which can mean that games and browser can appear slow or non-responsive.
+Virtualised Linux runs on your machine on top of the operating system you already use. This makes it easy to test different versions of Linux, or experiment with and break the system without causing damage or changing your host operating system. However, you need to set up a virtual environment using software such as QEMU or [VirtualBox](https://www.virtualbox.org/). In addition, virtual machines often lack graphically accelerated environments, which can mean that games and browsers can appear slow or non-responsive.
 
 ## What's a Desktop Environment?
 
 {{< inset-img-rect src="images/desktop-environment.png" alt="A screenshot of the GNOME Desktop Environment with the Files app open." caption="*The GNOME Desktop Environment with the Files app open.*">}}
 
 
-A desktop environment provides the tools you need to interface with the operating system, run apps and play games in a visual format. Because users have different requirements and preferences with how they use their computer, several desktop environments exist to cater to these specific needs. If you're on Windows, KDE is the biggest analogue, providing a similar layout to the default Windows environment. MacOS users may find that GNOME is similar to their preferences. 
+A desktop environment provides the tools and programs you need to interface with the operating system, run apps and play games in a graphical format. Because users have different requirements and preferences with how they use their computer and how information is presented to them, several desktop environments exist to cater to these specific needs. If you're on Windows, KDE is the biggest analogue, providing a similar layout to the default Windows environment. MacOS users may find that GNOME is similar to their preferences. 
 
 ### KDE
 [KDE](https://kde.org/plasma-desktop/) is a desktop environment that embraces customisation and openness. Although it's default layout is quite similar to that of Windows, you can significantly change how information is accessed and displayed to the user, a [process called ricing](https://www.reddit.com/r/unixporn/). 
@@ -135,11 +131,13 @@ There are a multitude of other important directories serving different functions
 {{< inset-img-rect src="images/cachyos-terminal.png" alt="A screenshot of the Ptyxis terminal on CachyOS." caption="*A screenshot of the Ptyxis terminal on CachyOS.*">}}
 
 
-The Linux terminal can often seem an oppressive or daunting barrier to entry to Linux. Your experience with it, however, all depends on how you approach it. When you think of it as a way to dictate tasks for the computer to conduct, it's very much akin to how you use an operating system on a more interactive or visual environment. 
+The Linux terminal can often seem an oppressive or daunting barrier to entry to Linux. Your experience with it, however, all depends on how you approach it. When you think of it as a way to dictate tasks for the computer to conduct, it's very much akin to how you use an operating system already, such as when you move files from one folder to another. 
 
 On some distros you can go without using the terminal at all as they provide other means to download software or edit files, for example. You can however use it to run programs and apps, create, move and delete files and much more, just by using your keyboard. Let's explore some basic commands:
 
 ##### The cd Command
+
+`cd`
 
 This command, when combined with a path relocates your terminal's current working directory (the directory/folder you have open) to the path specified in the command.
 
@@ -171,12 +169,11 @@ Will send you back to the root directory from `/var/lib`.
 
 `ls`
 
-This command lists all of the files and directories in your current working directory. It's simple, but you can use what are called arguments to modify how it works. For example:
+This command lists all of the files and directories in your current working directory. It's simple, but you can use what are called arguments to modify how the command works. For example:
 
 `ls -l`
 
 Will provide you with information about the file or directory, such as when it was created, what user owns it and what file permissions exist.
-
 
 Ultimately, there are a plethora of Linux commands out there for all sorts of use cases but be sure to check what it does first *before* you run it. Plenty of users, myself included, have ran commands without understanding how it'll impact their system and paid the price for it. You don't need to be an expert, but knowing just enough can keep you out of trouble.
 
@@ -194,19 +191,20 @@ When you're using a new operating system, it can be overwhelming to get started 
 
 ### The Arch Wiki
 
-[The Arch wiki](https://wiki.archlinux.org/title/Main_page) is an excellent wiki resource to learn about specific programs and services used in Linux and it's distributions. It provides some advice on recommended configurations as well as system maintenance and configuration guidance. It's useful for advanced users going off the beaten path.
+[The Arch wiki](https://wiki.archlinux.org/title/Main_page) is an excellent wiki resource to learn about specific programs and services used in Linux and it's distributions. It provides some advice on recommended configurations as well as system maintenance and configuration guidance. 
+
+It's useful for advanced users going off the beaten path, and will become an incredibly useful resource once you've mastered the basics. Note  that their package installation commands will reference `pacman`, Arch Linux's package manager. Yours might be different.
 
 
-### LTT & Short Circuit
+### YouTube
 
-Linus Tech Tips is an accessible and popular YouTube channel which talks about computers. Videos can explain [how to install Linux](https://www.youtube.com/watch?v=_Ua-d9OeUOg) or [what distro to pick](https://www.youtube.com/watch?v=XXrCAC6bUsk).
+Linus Tech Tips is an accessible and popular YouTube channel which talks about computers. Videos can explain [how to install Linux](https://www.youtube.com/watch?v=_Ua-d9OeUOg) or [what distro to pick](https://www.youtube.com/watch?v=XXrCAC6bUsk). Likewise [Explaining Computers](https://www.youtube.com/watch?v=e2wB9r1SYrY) gives an excellent breakdown of what to look for when picking a distro, and some reccomendations.
 
 ### Forums
 
-[Reddit forums](https://www.reddit.com/r/linuxquestions/) can often be a great communal resource for troubleshooting and general guidance. Likewise [Stackoverflow](https://stackoverflow.com/questions/tagged/linux?tab=Newest) or [the Swinux Discord](https://discord.gg/ZfCW8DhnhA) are good places to ask around.
+[Reddit forums](https://www.reddit.com/r/linuxquestions/) can often be a great communal resource for troubleshooting and general guidance.[The Swinux Discord](https://discord.gg/ZfCW8DhnhA) is always a good place to ask fellow students. In addition, [Stackoverflow](https://stackoverflow.com/questions/tagged/linux?tab=Newest) is a good resource with tons of user contributions.
 
 ### Using AI
 
 If you're keen on AI, it can be a good resource to bounce ideas off of and guide you through simple troubleshooting steps. As always, verify with another source as AI can hallucinate or provide inappropriate advice for your situation.
-
 
