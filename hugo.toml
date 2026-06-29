@@ -1,8 +1,7 @@
 baseURL = 'https://timfo.xyz/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = "Tim's Portolio"
 theme = ["github.com/luizdepra/hugo-coder"]
-languagecode = "en"
 defaultcontentlanguage = "en"
 
 [params]
@@ -28,6 +27,19 @@ defaultcontentlanguage = "en"
   icon = "fa-brands fa-github fa-2x"
   weight = 2
   url = "https://github.com/t1mothyr"
+
+[[params.social]]
+  name = "Email"
+  icon = "fa-solid fa-envelope fa-2x"
+  weight = 2
+  url = "mailto://contact@timfo.xyz"
+
+[[params.social]]
+  name = "Email"
+  icon = "fa-solid fa-rss fa-2x"
+  weight = 2
+  url = "https://timfo.xyz/index.xml"
+
 
 [imaging]
   [imaging.exif]

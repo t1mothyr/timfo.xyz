@@ -2,10 +2,13 @@
 draft = false
 date = 2026-05-27T12:30:00+10:00
 title = "Getting Started With Linux: The Beginner's Brief"
-description = ""
+description = "What awaits you on the other side."
 author = 'Timothy'
 tags = ['article','guide','linux']
 +++
+
+*What awaits you on the other side?*
+
 
 There's been a lot of fuss about Linux in the past couple of months (and years), and it hasn't exactly come from nowhere. A huge cultural shift has taken place due to the perceived lack of control over the devices we own and use everyday.
 
