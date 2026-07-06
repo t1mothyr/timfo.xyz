@@ -6,8 +6,7 @@ defaultcontentlanguage = "en"
 
 [params]
   author = "Timothy R."
-  info =  """Featuring my personal projects, experience & learning.
-  \n *Insert a witty and humorous quote* """
+  info =  """Featuring my personal projects, experience & learning."""
   keywords = "blog,personal"
   colorScheme = "dark"
 
